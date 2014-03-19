@@ -1,0 +1,28 @@
+{
+	"name": "rename-key",
+	"version": "1.0.0",
+	"description": "Rename key in object",
+	"main": "index.js",
+	"keywords": [
+		"rename",
+		"key",
+		"property"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tjconcept/js-rename-key.git"
+	},
+	"author": {
+		"name": "Thomas Jensen",
+		"email": "thomas@tjconcept.dk",
+		"url": "http://tjconcept.dk"
+	},
+	"devDependencies": {
+		"tap": "~0.3.3"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/tap test.js"
+	},
+	"readmeFilename": "README.md",
+	"license": "BSD-3-Clause"
+}
