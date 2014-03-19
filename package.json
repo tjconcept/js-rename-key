@@ -1,6 +1,6 @@
 {
 	"name": "rename-key",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Rename key in object",
 	"main": "index.js",
 	"keywords": [
@@ -18,7 +18,7 @@
 		"url": "http://tjconcept.dk"
 	},
 	"devDependencies": {
-		"tap": "~0.3.3"
+		"tap": "~0.4.8"
 	},
 	"scripts": {
 		"test": "./node_modules/.bin/tap test.js"
