@@ -2,12 +2,12 @@
 
 Rename a single key in an object
 
-## installation
+## Installation
 
 	// npm
 	$ npm install pluck-keys
 
-## usage
+## Usage
 
 	var renameKey = require('rename-key');
 
@@ -21,4 +21,4 @@ Alters the object "by reference" and returns the object.
 
 ## License
 
-MIT
+MIT © [Thomas Jensen](http://tjconcept.dk)
