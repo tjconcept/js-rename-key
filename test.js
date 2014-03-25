@@ -5,8 +5,6 @@ var renameKey = require('./');
 var test = require('tap').test;
 
 test('rename-key', function( t ) {
-		t.plan(2);
-
 		var o = {
 			'name': 'GitHub',
 			'url': 'https://github.com',
@@ -23,4 +21,22 @@ test('rename-key', function( t ) {
 			'name': 'GitHub',
 			'web': 'https://github.com',
 		});
+
+		o.renameKey = renameKey;
+
+		r = o.renameKey('name', 'title');
+
+		t.deepEqual(r, {
+			'title': 'GitHub',
+			'web': 'https://github.com',
+			'renameKey': renameKey,
+		});
+
+		t.deepEqual(o, {
+			'title': 'GitHub',
+			'web': 'https://github.com',
+			'renameKey': renameKey,
+		});
+
+		t.end();
 });
