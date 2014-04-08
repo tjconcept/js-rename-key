@@ -5,7 +5,7 @@ Rename a single key in an object
 ## Installation
 
 	// npm
-	$ npm install pluck-keys
+	$ npm install rename-key
 
 ## Usage
 
