@@ -38,11 +38,8 @@ test('rename-key', function( t ) {
 		'renameKey': renameKey,
 	});
 
-	var Base = function(){};
-	Base.prototype.renameKey = renameKey;
-
 	var Person = function( name, surname ){ this.name = name; this.surname = surname; };
-	Person.prototype = Object.create(Base.prototype);
+	Person.prototype = Object.create({renameKey: renameKey});
 
 	var person = new Person('Sofie', 'Jensen');
 	person

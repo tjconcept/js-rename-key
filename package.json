@@ -1,28 +1,30 @@
 {
-	"name": "rename-key",
-	"version": "1.1.1",
-	"description": "Rename key in object",
-	"main": "index.js",
-	"keywords": [
-		"rename",
-		"key",
-		"property"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tjconcept/js-rename-key.git"
-	},
-	"author": {
-		"name": "Thomas Jensen",
-		"email": "thomas@tjconcept.dk",
-		"url": "http://tjconcept.dk"
-	},
-	"devDependencies": {
-		"tap": "~0.4.8"
-	},
-	"scripts": {
-		"test": "./node_modules/.bin/tap test.js"
-	},
-	"readmeFilename": "README.md",
-	"license": "MIT"
+  "name": "rename-key",
+  "version": "1.1.1",
+  "description": "Rename key in object",
+  "main": "index.js",
+  "keywords": [
+    "rename",
+    "key",
+    "property"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjconcept/js-rename-key.git"
+  },
+  "author": {
+    "name": "Thomas Jensen",
+    "email": "thomas@tjconcept.dk",
+    "url": "http://tjconcept.dk"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "tap": "~0.4.8"
+  },
+  "scripts": {
+    "test": "tap test.js",
+    "posttest": "istanbul cover test.js"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
 }
